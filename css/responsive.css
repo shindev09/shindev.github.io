@@ -1,0 +1,320 @@
+
+
+.nav__bars-btn{
+    position: relative;
+    color: #fff;
+    display: none;
+    font-size: 35px;
+}
+.nav__bars-close{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    z-index: 10;
+    font-size: 35px;
+    transition: transform 0.5s linear;
+}
+
+.fa-bars{
+    position: absolute;
+    top: 40px;
+    left: 400px;
+}
+.nav__overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 9;
+    animation: fadeIn 0.5s linear;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.nav__checked:checked ~ .nav__overlay{
+    display: block;
+   
+}
+.nav__checked:checked ~.navbar__mobile{
+    transform: translateX(0%);
+    opacity: 1;
+}
+.navbar__mobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background: var(--color-primary);
+    font-size: 1.6rem;
+    padding: 10px 20px;
+    font-weight: bold;
+    transform: translateX(100%);
+    z-index: 10;
+    opacity: 0;
+    transition:  opacity 0.2s linear;
+}
+.navbar__mobile-list{
+    margin-top: 100px;
+}
+.navbar__mobile-item{
+    text-decoration: none;
+    padding: 10px 0;
+}
+.navbar__mobile-list li{
+    list-style: none;
+}
+.navbar__mobile-item a{
+    color: #fff;
+}
+.moblies{
+    margin: -75px 0 50px 0;
+    display: none;
+}
+/* tablet */
+@media only screen and (max-width: 1023px) and (min-width: 767px){
+    .header{
+        width: 100%;
+    }
+    .navbar{
+        display: none;
+    }
+    .header__login, .header__register{
+        display: none;
+    }
+    .nav__bars-btn{
+        display: block;
+    }
+    .container{
+       display: none;
+    }
+    .content__games{
+       display: none;
+    }
+    .container__content-item img{
+        width: 100%;
+    }
+    .container__list{
+        margin-left: -30px;
+    }
+    .btn-games{
+        display: none;
+    }
+    .container__list-search .search{
+       margin-top: 30px;
+       width: 500px;
+    }
+    .container-wrapper{
+        flex-direction: column;
+    }
+    .moblies{
+        display: block;
+        margin-top: 70px;
+    }
+    .pc h2{
+        display: none;
+    }
+    .pc__content{
+        display: flex;
+    }
+    .lastest__news {
+        margin-top: 70px;
+        order: 1;
+    }
+    .container__list-categories{
+        order: 2;
+    }
+    .list__categories ul li .color-span1{
+        margin-left: 100px;
+    }
+    .list__categories ul li .color-span2{
+        margin-left: 50px;
+    }
+    .list__categories ul li .color-span3{
+        margin-left: 60px;
+    }
+    .list__categories ul li .color-span4{
+        margin-left: 66px;
+    }
+    .list__categories ul li .color-span5{
+        margin-left: 45px;
+    }
+    .container-wrapper__content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container__content .img__games img{
+        width: 550px;
+        height: 300px;
+    }
+    .infomation_game{
+        width: 100%;
+    }
+    .container__content{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .container-wrapper__video{
+        width: 769px;
+        height: 500px;
+    }
+    #video{
+        width: 550px;
+        height: 300px; 
+        margin-bottom: 40px;
+        margin-left: 10px;
+    }
+    .container-wrapper__list-games{
+        display: none;
+    }
+    .footer__tags{
+        text-align: center;
+        flex-direction: column;
+    }
+    .footer__content{
+        display: none;
+    }
+    .footer__column1{
+        margin-bottom: 20px;
+    }
+    .footer__icons{
+        flex-direction: column;
+        text-align: center;
+    }
+    .icon{
+        padding: 10px 0 
+    }
+}
+
+
+
+
+/* moblie */
+@media only screen and (max-width: 766px){
+    .header{
+        width: 100%;
+    }
+    .navbar{
+        display: none;
+    }
+    .header__login, .header__register{
+        display: none;
+    }
+    .nav__bars-btn{
+        display: block;
+    }
+    .container{
+       display: none;
+    }
+    .content__games{
+       display: none;
+    }
+    .container__content-item img{
+        width: 100%;
+    }
+    .container__list{
+        margin-left: -30px;
+    }
+    .btn-games{
+        display: none;
+    }
+    .container__list-search .search{
+       margin-top: 30px;
+       width: 500px;
+    }
+    .container-wrapper{
+        width: 766px;
+        flex-direction: column;
+    }
+    .moblies{
+        display: block;
+        margin-top: 70px;
+    }
+    .pc h2{
+        display: none;
+    }
+    .pc__content{
+        display: flex;
+    }
+    .lastest__news {
+        margin-top: 70px;
+        order: 1;
+    }
+    .container__list-categories{
+        order: 2;
+    }
+    .list__categories ul li .color-span1{
+        margin-left: 100px;
+    }
+    .list__categories ul li .color-span2{
+        margin-left: 50px;
+    }
+    .list__categories ul li .color-span3{
+        margin-left: 60px;
+    }
+    .list__categories ul li .color-span4{
+        margin-left: 66px;
+    }
+    .list__categories ul li .color-span5{
+        margin-left: 45px;
+    }
+    .container-wrapper__content{
+        width: 766px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container__content .img__games img{
+        width: 550px;
+        height: 300px;
+    }
+    .infomation_game{
+        width: 100%;
+    }
+    .container__content{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .container-wrapper__video{
+        width: 769px;
+        height: 500px;
+    }
+    #video{
+        width: 550px;
+        height: 300px; 
+        margin-bottom: 40px;
+        margin-left: 10px;
+    }
+    .container-wrapper__list-games{
+        display: none;
+    }
+    .footer{
+        width: 766px;
+    }
+    .footer__tags{
+        text-align: center;
+        flex-direction: column;
+    }
+    .footer__content{
+        display: none;
+    }
+    .footer__column1{
+        margin-bottom: 20px;
+    }
+    .footer__icons{
+        flex-direction: column;
+        text-align: center;
+    }
+    .icon{
+        padding: 10px 0 
+    }
+}

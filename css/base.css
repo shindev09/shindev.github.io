@@ -1,0 +1,14 @@
+:root{
+    --color-text: #10ddb4;
+    --color-primary: #353535;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+}
